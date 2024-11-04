@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirala's Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 5em 0;
+            background: #333;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+            border: 4px solid #ffd700;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        header button {
+            padding: 0.8em 2em;
+            border: none;
+            color: #333;
+            background: #ffd700;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        header button:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        .projects-container {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project, .review {
+            background: #fff;
+            padding: 1.5em;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .project:hover, .review:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 0.8em;
+        }
+
+        .project h3 {
+            color: #ffd700;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .project p, .review p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .review span {
+            font-size: 0.9em;
+            color: #777;
+            display: block;
+            margin-top: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #333;
+            color: #fff;
+            margin-top: 2em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="my-photo.jpg" alt="Profile photo of Nirala"> <!-- Replace with actual image path -->
+        <h1>Welcome to Nirala's Portfolio</h1>
+        <p>DevOps Engineer | Cloud Enthusiast | Automation Specialist</p>
+        <button onclick="window.location.href='#projects'">Explore Projects</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Nirala, a passionate DevOps Engineer with a knack for cloud infrastructure and automation. I love building scalable systems and streamlining processes using the latest in technology.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="spotify.png" alt="Screenshot of Spotify Playlist Automation project"> <!-- Replace with actual image path -->
+                <h3>Spotify Playlist Automation</h3>
+                <p>Automated Spotify playlist creation using Terraform.</p>
+                <a href="https://github.com/Nirala183/Spotify_Playlist_Tf" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project">
+                <img src="vs_Code.png" alt="Screenshot of AWS Infrastructure project"> <!-- Replace with actual image path -->
+                <h3>Web App Infrastructure on AWS</h3>
+                <p>Set up scalable infrastructure for a web application using Terraform and AWS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Nirala's work on our infrastructure was seamless and efficient. Highly recommended!"</p>
+            <span>- Project Manager, TechCorp</span>
+        </div>
+        <div class="review">
+            <p>"Thanks to Nirala's automation skills, our deployment times have reduced by over 50%!"</p>
+            <span>- Lead DevOps Engineer, Cloud Solutions</span>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Connect with me on <a href="https://github.com/Nirala183" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/nirala183" target="_blank">LinkedIn</a></p>
+        <p>&copy; 2024 Nirala</p>
+    </footer>
+</body>
+</html>
